@@ -7,34 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D493872D1A45A3E4002F9DF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D493872C1A45A3E4002F9DF9 /* AppDelegate.m */; };
-		D493872F1A45A3E4002F9DF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D493872E1A45A3E4002F9DF9 /* main.m */; };
-		D49387311A45A3E4002F9DF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49387301A45A3E4002F9DF9 /* Images.xcassets */; };
-		D49387341A45A3E4002F9DF9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49387321A45A3E4002F9DF9 /* MainMenu.xib */; };
-		D49387401A45A3E4002F9DF9 /* TestAllegroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D493873F1A45A3E4002F9DF9 /* TestAllegroTests.m */; };
+		D493874B1A45A4AA002F9DF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D49387491A45A4AA002F9DF9 /* main.c */; };
+		D493876B1A45A863002F9DF9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D493876A1A45A863002F9DF9 /* Info.plist */; };
+		D493876D1A45A8B2002F9DF9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D493876C1A45A8B2002F9DF9 /* CoreFoundation.framework */; };
+		D49387741A45A8DF002F9DF9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D493876E1A45A8DF002F9DF9 /* AppKit.framework */; };
+		D49387751A45A8DF002F9DF9 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D493876F1A45A8DF002F9DF9 /* ApplicationServices.framework */; };
+		D49387761A45A8DF002F9DF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387701A45A8DF002F9DF9 /* AudioToolbox.framework */; };
+		D49387771A45A8DF002F9DF9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387711A45A8DF002F9DF9 /* IOKit.framework */; };
+		D49387781A45A8DF002F9DF9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387721A45A8DF002F9DF9 /* OpenAL.framework */; };
+		D49387791A45A8DF002F9DF9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387731A45A8DF002F9DF9 /* OpenGL.framework */; };
+		D49387911A467638002F9DF9 /* liballegro_acodec-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D493874C1A45A7C6002F9DF9 /* liballegro_acodec-static.a */; };
+		D49387921A467638002F9DF9 /* liballegro_audio-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D493874D1A45A7C6002F9DF9 /* liballegro_audio-static.a */; };
+		D49387931A467638002F9DF9 /* liballegro_color-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D493874E1A45A7C6002F9DF9 /* liballegro_color-static.a */; };
+		D49387941A467638002F9DF9 /* liballegro_dialog-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D493874F1A45A7C6002F9DF9 /* liballegro_dialog-static.a */; };
+		D49387951A467638002F9DF9 /* liballegro_font-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387501A45A7C6002F9DF9 /* liballegro_font-static.a */; };
+		D49387961A467638002F9DF9 /* liballegro_image-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387511A45A7C6002F9DF9 /* liballegro_image-static.a */; };
+		D49387971A467638002F9DF9 /* liballegro_main-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387521A45A7C6002F9DF9 /* liballegro_main-static.a */; };
+		D49387981A467638002F9DF9 /* liballegro_memfile-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387531A45A7C6002F9DF9 /* liballegro_memfile-static.a */; };
+		D49387991A467638002F9DF9 /* liballegro_physfs-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387541A45A7C6002F9DF9 /* liballegro_physfs-static.a */; };
+		D493879A1A467638002F9DF9 /* liballegro_primitives-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387551A45A7C6002F9DF9 /* liballegro_primitives-static.a */; };
+		D493879B1A467638002F9DF9 /* liballegro_ttf-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387561A45A7C6002F9DF9 /* liballegro_ttf-static.a */; };
+		D493879C1A467638002F9DF9 /* liballegro-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387571A45A7C6002F9DF9 /* liballegro-static.a */; };
+		D493879D1A467638002F9DF9 /* libdumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387581A45A7C6002F9DF9 /* libdumb.a */; };
+		D493879E1A467638002F9DF9 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387591A45A7C6002F9DF9 /* libFLAC.a */; };
+		D493879F1A467638002F9DF9 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D493875A1A45A7C6002F9DF9 /* libfreetype.6.dylib */; };
+		D49387A01A467638002F9DF9 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49387891A467124002F9DF9 /* libfreetype.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D493873A1A45A3E4002F9DF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D493871E1A45A3E4002F9DF9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D49387251A45A3E4002F9DF9;
-			remoteInfo = TestAllegro;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D49387261A45A3E4002F9DF9 /* TestAllegro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAllegro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D493872A1A45A3E4002F9DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D493872B1A45A3E4002F9DF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D493872C1A45A3E4002F9DF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D493872E1A45A3E4002F9DF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D49387301A45A3E4002F9DF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D49387331A45A3E4002F9DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D49387391A45A3E4002F9DF9 /* TestAllegroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAllegroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D493873E1A45A3E4002F9DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D493873F1A45A3E4002F9DF9 /* TestAllegroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAllegroTests.m; sourceTree = "<group>"; };
+		D49387491A45A4AA002F9DF9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = SOURCE_ROOT; };
+		D493874C1A45A7C6002F9DF9 /* liballegro_acodec-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_acodec-static.a"; path = "../../../../usr/local/lib/liballegro_acodec-static.a"; sourceTree = "<group>"; };
+		D493874D1A45A7C6002F9DF9 /* liballegro_audio-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_audio-static.a"; path = "../../../../usr/local/lib/liballegro_audio-static.a"; sourceTree = "<group>"; };
+		D493874E1A45A7C6002F9DF9 /* liballegro_color-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_color-static.a"; path = "../../../../usr/local/lib/liballegro_color-static.a"; sourceTree = "<group>"; };
+		D493874F1A45A7C6002F9DF9 /* liballegro_dialog-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_dialog-static.a"; path = "../../../../usr/local/lib/liballegro_dialog-static.a"; sourceTree = "<group>"; };
+		D49387501A45A7C6002F9DF9 /* liballegro_font-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_font-static.a"; path = "../../../../usr/local/lib/liballegro_font-static.a"; sourceTree = "<group>"; };
+		D49387511A45A7C6002F9DF9 /* liballegro_image-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_image-static.a"; path = "../../../../usr/local/lib/liballegro_image-static.a"; sourceTree = "<group>"; };
+		D49387521A45A7C6002F9DF9 /* liballegro_main-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_main-static.a"; path = "../../../../usr/local/lib/liballegro_main-static.a"; sourceTree = "<group>"; };
+		D49387531A45A7C6002F9DF9 /* liballegro_memfile-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_memfile-static.a"; path = "../../../../usr/local/lib/liballegro_memfile-static.a"; sourceTree = "<group>"; };
+		D49387541A45A7C6002F9DF9 /* liballegro_physfs-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_physfs-static.a"; path = "../../../../usr/local/lib/liballegro_physfs-static.a"; sourceTree = "<group>"; };
+		D49387551A45A7C6002F9DF9 /* liballegro_primitives-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_primitives-static.a"; path = "../../../../usr/local/lib/liballegro_primitives-static.a"; sourceTree = "<group>"; };
+		D49387561A45A7C6002F9DF9 /* liballegro_ttf-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro_ttf-static.a"; path = "../../../../usr/local/lib/liballegro_ttf-static.a"; sourceTree = "<group>"; };
+		D49387571A45A7C6002F9DF9 /* liballegro-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballegro-static.a"; path = "../../../../usr/local/lib/liballegro-static.a"; sourceTree = "<group>"; };
+		D49387581A45A7C6002F9DF9 /* libdumb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdumb.a; path = ../../../../usr/local/lib/libdumb.a; sourceTree = "<group>"; };
+		D49387591A45A7C6002F9DF9 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = ../../../../usr/local/Cellar/flac/1.3.1/lib/libFLAC.a; sourceTree = "<group>"; };
+		D493875A1A45A7C6002F9DF9 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../../../usr/local/Cellar/freetype/2.5.4/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		D493876A1A45A863002F9DF9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D493876C1A45A8B2002F9DF9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D493876E1A45A8DF002F9DF9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D493876F1A45A8DF002F9DF9 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		D49387701A45A8DF002F9DF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D49387711A45A8DF002F9DF9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D49387721A45A8DF002F9DF9 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D49387731A45A8DF002F9DF9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D49387891A467124002F9DF9 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../../usr/local/Cellar/freetype/2.5.4/lib/libfreetype.a; sourceTree = "<group>"; };
+		D493878A1A467124002F9DF9 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = ../../../../usr/local/Cellar/libogg/1.3.2/lib/libogg.a; sourceTree = "<group>"; };
+		D493878B1A467124002F9DF9 /* libphysfs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libphysfs.a; path = ../../../../usr/local/Cellar/physfs/2.0.3/lib/libphysfs.a; sourceTree = "<group>"; };
+		D493878C1A467124002F9DF9 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng16.a; path = ../../../../usr/local/Cellar/libpng/1.6.15/lib/libpng16.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D49387361A45A3E4002F9DF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D49387911A467638002F9DF9 /* liballegro_acodec-static.a in Frameworks */,
+				D49387921A467638002F9DF9 /* liballegro_audio-static.a in Frameworks */,
+				D49387931A467638002F9DF9 /* liballegro_color-static.a in Frameworks */,
+				D49387941A467638002F9DF9 /* liballegro_dialog-static.a in Frameworks */,
+				D49387951A467638002F9DF9 /* liballegro_font-static.a in Frameworks */,
+				D49387961A467638002F9DF9 /* liballegro_image-static.a in Frameworks */,
+				D49387971A467638002F9DF9 /* liballegro_main-static.a in Frameworks */,
+				D49387981A467638002F9DF9 /* liballegro_memfile-static.a in Frameworks */,
+				D49387991A467638002F9DF9 /* liballegro_physfs-static.a in Frameworks */,
+				D493879A1A467638002F9DF9 /* liballegro_primitives-static.a in Frameworks */,
+				D493879B1A467638002F9DF9 /* liballegro_ttf-static.a in Frameworks */,
+				D493879C1A467638002F9DF9 /* liballegro-static.a in Frameworks */,
+				D493879D1A467638002F9DF9 /* libdumb.a in Frameworks */,
+				D493879E1A467638002F9DF9 /* libFLAC.a in Frameworks */,
+				D493879F1A467638002F9DF9 /* libfreetype.6.dylib in Frameworks */,
+				D49387A01A467638002F9DF9 /* libfreetype.a in Frameworks */,
+				D49387741A45A8DF002F9DF9 /* AppKit.framework in Frameworks */,
+				D49387751A45A8DF002F9DF9 /* ApplicationServices.framework in Frameworks */,
+				D49387761A45A8DF002F9DF9 /* AudioToolbox.framework in Frameworks */,
+				D49387771A45A8DF002F9DF9 /* IOKit.framework in Frameworks */,
+				D49387781A45A8DF002F9DF9 /* OpenAL.framework in Frameworks */,
+				D49387791A45A8DF002F9DF9 /* OpenGL.framework in Frameworks */,
+				D493876D1A45A8B2002F9DF9 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +103,33 @@
 		D493871D1A45A3E4002F9DF9 = {
 			isa = PBXGroup;
 			children = (
+				D49387891A467124002F9DF9 /* libfreetype.a */,
+				D493878A1A467124002F9DF9 /* libogg.a */,
+				D493878B1A467124002F9DF9 /* libphysfs.a */,
+				D493878C1A467124002F9DF9 /* libpng16.a */,
+				D493876E1A45A8DF002F9DF9 /* AppKit.framework */,
+				D493876F1A45A8DF002F9DF9 /* ApplicationServices.framework */,
+				D49387701A45A8DF002F9DF9 /* AudioToolbox.framework */,
+				D49387711A45A8DF002F9DF9 /* IOKit.framework */,
+				D49387721A45A8DF002F9DF9 /* OpenAL.framework */,
+				D49387731A45A8DF002F9DF9 /* OpenGL.framework */,
+				D493876C1A45A8B2002F9DF9 /* CoreFoundation.framework */,
+				D493874C1A45A7C6002F9DF9 /* liballegro_acodec-static.a */,
+				D493874D1A45A7C6002F9DF9 /* liballegro_audio-static.a */,
+				D493874E1A45A7C6002F9DF9 /* liballegro_color-static.a */,
+				D493874F1A45A7C6002F9DF9 /* liballegro_dialog-static.a */,
+				D49387501A45A7C6002F9DF9 /* liballegro_font-static.a */,
+				D49387511A45A7C6002F9DF9 /* liballegro_image-static.a */,
+				D49387521A45A7C6002F9DF9 /* liballegro_main-static.a */,
+				D49387531A45A7C6002F9DF9 /* liballegro_memfile-static.a */,
+				D49387541A45A7C6002F9DF9 /* liballegro_physfs-static.a */,
+				D49387551A45A7C6002F9DF9 /* liballegro_primitives-static.a */,
+				D49387561A45A7C6002F9DF9 /* liballegro_ttf-static.a */,
+				D49387571A45A7C6002F9DF9 /* liballegro-static.a */,
+				D49387581A45A7C6002F9DF9 /* libdumb.a */,
+				D49387591A45A7C6002F9DF9 /* libFLAC.a */,
+				D493875A1A45A7C6002F9DF9 /* libfreetype.6.dylib */,
 				D49387281A45A3E4002F9DF9 /* TestAllegro */,
-				D493873C1A45A3E4002F9DF9 /* TestAllegroTests */,
 				D49387271A45A3E4002F9DF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D49387261A45A3E4002F9DF9 /* TestAllegro.app */,
-				D49387391A45A3E4002F9DF9 /* TestAllegroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,39 +145,10 @@
 		D49387281A45A3E4002F9DF9 /* TestAllegro */ = {
 			isa = PBXGroup;
 			children = (
-				D493872B1A45A3E4002F9DF9 /* AppDelegate.h */,
-				D493872C1A45A3E4002F9DF9 /* AppDelegate.m */,
-				D49387301A45A3E4002F9DF9 /* Images.xcassets */,
-				D49387321A45A3E4002F9DF9 /* MainMenu.xib */,
-				D49387291A45A3E4002F9DF9 /* Supporting Files */,
+				D49387491A45A4AA002F9DF9 /* main.c */,
+				D493876A1A45A863002F9DF9 /* Info.plist */,
 			);
 			path = TestAllegro;
-			sourceTree = "<group>";
-		};
-		D49387291A45A3E4002F9DF9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D493872A1A45A3E4002F9DF9 /* Info.plist */,
-				D493872E1A45A3E4002F9DF9 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D493873C1A45A3E4002F9DF9 /* TestAllegroTests */ = {
-			isa = PBXGroup;
-			children = (
-				D493873F1A45A3E4002F9DF9 /* TestAllegroTests.m */,
-				D493873D1A45A3E4002F9DF9 /* Supporting Files */,
-			);
-			path = TestAllegroTests;
-			sourceTree = "<group>";
-		};
-		D493873D1A45A3E4002F9DF9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D493873E1A45A3E4002F9DF9 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,24 +171,6 @@
 			productReference = D49387261A45A3E4002F9DF9 /* TestAllegro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D49387381A45A3E4002F9DF9 /* TestAllegroTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D49387461A45A3E4002F9DF9 /* Build configuration list for PBXNativeTarget "TestAllegroTests" */;
-			buildPhases = (
-				D49387351A45A3E4002F9DF9 /* Sources */,
-				D49387361A45A3E4002F9DF9 /* Frameworks */,
-				D49387371A45A3E4002F9DF9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D493873B1A45A3E4002F9DF9 /* PBXTargetDependency */,
-			);
-			name = TestAllegroTests;
-			productName = TestAllegroTests;
-			productReference = D49387391A45A3E4002F9DF9 /* TestAllegroTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,10 +182,6 @@
 				TargetAttributes = {
 					D49387251A45A3E4002F9DF9 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					D49387381A45A3E4002F9DF9 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = D49387251A45A3E4002F9DF9;
 					};
 				};
 			};
@@ -181,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				D49387251A45A3E4002F9DF9 /* TestAllegro */,
-				D49387381A45A3E4002F9DF9 /* TestAllegroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,15 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49387311A45A3E4002F9DF9 /* Images.xcassets in Resources */,
-				D49387341A45A3E4002F9DF9 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D49387371A45A3E4002F9DF9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D493876B1A45A863002F9DF9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,39 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D493872F1A45A3E4002F9DF9 /* main.m in Sources */,
-				D493872D1A45A3E4002F9DF9 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D49387351A45A3E4002F9DF9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D49387401A45A3E4002F9DF9 /* TestAllegroTests.m in Sources */,
+				D493874B1A45A4AA002F9DF9 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D493873B1A45A3E4002F9DF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D49387251A45A3E4002F9DF9 /* TestAllegro */;
-			targetProxy = D493873A1A45A3E4002F9DF9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D49387321A45A3E4002F9DF9 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D49387331A45A3E4002F9DF9 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D49387411A45A3E4002F9DF9 /* Debug */ = {
@@ -279,6 +260,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,6 +302,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -328,6 +321,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestAllegro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/flac/1.3.1/lib,
+					/usr/local/Cellar/freetype/2.5.4/lib,
+					/usr/local/Cellar/libogg/1.3.2/lib,
+					/usr/local/Cellar/physfs/2.0.3/lib,
+					/usr/local/Cellar/libpng/1.6.15/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,43 +340,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestAllegro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D49387471A45A3E4002F9DF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					/usr/local/Cellar/flac/1.3.1/lib,
+					/usr/local/Cellar/freetype/2.5.4/lib,
+					/usr/local/Cellar/libogg/1.3.2/lib,
+					/usr/local/Cellar/physfs/2.0.3/lib,
+					/usr/local/Cellar/libpng/1.6.15/lib,
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TestAllegroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAllegro.app/Contents/MacOS/TestAllegro";
-			};
-			name = Debug;
-		};
-		D49387481A45A3E4002F9DF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TestAllegroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAllegro.app/Contents/MacOS/TestAllegro";
 			};
 			name = Release;
 		};
@@ -398,14 +371,7 @@
 				D49387451A45A3E4002F9DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D49387461A45A3E4002F9DF9 /* Build configuration list for PBXNativeTarget "TestAllegroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D49387471A45A3E4002F9DF9 /* Debug */,
-				D49387481A45A3E4002F9DF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
